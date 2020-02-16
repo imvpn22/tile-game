@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tile Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-container">
+            <!-- TODO: Undo, redo, new game feature -->
+        </div>
+
+        <div class="grid-container">
+            <h1> Tile Game </h1>
+
+            <div class="grid start" id="gridStart"> </div>
+
+            <!-- TODO: Add diffucilty level -->
+        </div>
+
+        <div class="right-container">
+            <!-- TODO: show move log -->
+        </div>
+
+        <!-- Popup for new game -->
+        <div class="overlay-container hidden" id="newGameContainer">
+            <div id="new-game" class="overlay-content">
+                <div class="title"> New Game </div>
+                <div class="subtitle">Select grid size</div>
+                <div class="moves">
+                    <button class="move move-selected" value="3"> 3 x 3</button>
+                    <button class="move" value="4"> 4 x 4 </button>
+                    <button class="move" value="5"> 5 x 5 </button>
+                </div>
+                <button class="game-btn" id="startGameBtn">Play</button>
+            </div>
+        </div>
+
+        <div class="overlay-container hidden" id="gameOverContainer">
+            <div class="overlay-content">
+                <div class="title"> You Won </div>
+                <div class="subtitle"> Want to play again? </div>
+                <div>
+                    <!-- Show statistics here, like time, moves etc -->
+                </div>
+                <button class="game-btn" id="playAgainBtn">Play Again</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Import Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
